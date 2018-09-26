@@ -29,9 +29,8 @@ ports=
 ipv6=
 expected=
 
-while getopts H:t:u:6oc o # s:
-do
-	case $o in
+while getopts "H:t:u:6oc" arg; do
+	case $arg in
 		H)
 			host="$OPTARG"
 			;;
